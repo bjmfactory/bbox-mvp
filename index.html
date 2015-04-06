@@ -5,6 +5,11 @@
   </head>
   <body>
     <h1>Brevity Box</h1>
+    <div id="profile"></div>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mithril/0.1.33/mithril.js"></script>
+    <script src="links.js"> </script>
+    <script>
+    m.module(document.getElementById('profile'), Links)
+    </script>
   </body>
 </html>
