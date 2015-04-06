@@ -9,7 +9,11 @@ Links.model = function () {
 // Controller
 Links.controller = function () {
   var ctrl = this
-  ctrl.links = m.prop( [new Links.model()] )
+  ctrl.links = m.prop( [
+    new Links.model(),
+    new Links.model(),
+    new Links.model(),
+  ] )
 
   ctrl.add = function () {
     var newModel = new Links.model()
@@ -44,8 +48,6 @@ Links.view = function(ctrl) {
           m('a', { href: link.url()}, link.title())
         ])
       })
-    ]),
-
-    m('button', { onclick: ctrl.add }, 'Add Link (temporary)')
+    ])
   ])
 }
