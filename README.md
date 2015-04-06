@@ -1,6 +1,6 @@
 # Brevity Box
 
-## A network for people who don't have much to say
+## A network for humans to share a few things
 You can share your favorite 3 links here. And you can look at 3 links that other people
 have saved.
 
