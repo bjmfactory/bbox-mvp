@@ -1,0 +1,40 @@
+body {
+  max-width: 600px;
+  margin: auto;
+  font-family: "Arial";
+}
+
+.box {
+  border: 1px solid black;
+  padding: 20px;
+  margin: 20px;
+}
+
+.edit {
+  border: 1px solid black;
+  padding: 20px;
+  margin: 20px;
+}
+
+.link a {
+  display: block;
+  margin: 0px 0px 10px 0px;
+  font-size: 20px;
+  color: blue;
+}
+
+.linkForm {
+  padding: 0px 0px 10px 0px;
+  margin: 0px 0px 10px 0px;
+}
+
+.linkForm input {
+  padding: 10px;
+  font-size: 20px;
+  margin: 0px 5px 0px 0px;
+}
+
+
+
+
+
