@@ -40,7 +40,9 @@ Links.view = function(ctrl) {
     m('.box', [
       m('h2', 'bjmfactory'),
       ctrl.links().map(function (link) {
-      return m('a', { href: link.url()}, link.title())
+        return m('.link', [
+          m('a', { href: link.url()}, link.title())
+        ])
       })
     ]),
 
