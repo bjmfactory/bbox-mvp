@@ -1,12 +1,13 @@
 # Brevity Box
 
-## Link sharing for people who don't have much to say
-You can save 3 links here. That's it.
+## A social network for people who don't have much to say
+You can share your favorite 3 links here. And you can look at 3 links that other people
+have saved.
 
 ## Summary
-Brevity Box is a place where you can link to your current 3 favorite places on the Internet.
-You may be saying to yourself, "3 is way too many." To that we would say, "You can use
-only 1 if you want."
+Brevity Box is a place where you can link to your current 3 favorite places on the
+Internet. You may be saying to yourself, "3 is way too many." To that we would say,
+"You don't have to use all 3."
 
 ## Problem: There are too many links.
 Have you noticed that there are quite a few links out there? It's overwhelming.
