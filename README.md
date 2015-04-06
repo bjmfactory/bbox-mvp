@@ -1,28 +1,26 @@
-# Project Name
+# Brevity Box
 
-## Heading
-  > Name the product in a way the reader (i.e. your target customers) will understand.
-
-## Sub-Heading
-  > Describe who the market for the product is and what benefit they get. One sentence only underneath the title.
+## Link sharing for people who don't have much to say
+You can save 3 links here. That's it.
 
 ## Summary
-  > Give a summary of the product and the benefit. Assume the reader will not read anything else so make this paragraph good.
+Brevity Box is a place where you can link to your current 3 favorite places on the Internet.
+You may be saying to yourself, "3 is way too many." To that we would say, "You can use
+only 1 if you want."
 
-## Problem
-  > Describe the problem your product solves.
+## Problem: There are too many links.
+Have you noticed that there are quite a few links out there? It's overwhelming.
 
 ## Solution
-  > Describe how your product elegantly solves the problem.
+On Brevity Box everyone gets 3 links. You can link wherever you want, and you can change
+them whenever you want, but you only get 3. That way you don't have to look through
+all the links, just 3 for each person.
 
-## Quote from You
-  > A quote from a spokesperson in your company.
-
-## How to Get Started
-  > Describe how easy it is to get started.
+## Quote
+"We believe limits can create value."
 
 ## Customer Quote
-  > Provide a quote from a hypothetical customer that describes how they experienced the benefit.
+"I prefer Facebook."
 
 ## Closing and Call to Action
-  > Wrap it up and give pointers where the reader should go next.
+We have a website: [Brevity Box](http://brevitybox.com)
