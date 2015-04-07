@@ -12,6 +12,8 @@ Links.controller = function () {
   // if (! Sessions.token()) return m.route('/sessions')
   var ctrl = this
   ctrl.links = m.prop( [
+    // could I have a random database of links that I pass
+    // in here as arguments?
     new Links.model(),
     new Links.model(),
     new Links.model(),

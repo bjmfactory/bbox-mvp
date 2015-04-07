@@ -41,7 +41,7 @@ Sessions.controller = function () {
         Sessions.token(response.token) //=> abc123
         // redirect to links
         console.log("Session success")
-        m.route("/users/" + response.username);
+        m.route("/h/" + response.username);
       },
       function (response) {
         // log error message

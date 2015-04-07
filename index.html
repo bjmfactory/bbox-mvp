@@ -10,14 +10,15 @@
 
     <!-- SCRIPTS-->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mithril/0.1.33/mithril.js"></script>
+    <script src="ext/m.ext.js"></script>
     <script src="components/links.js"> </script>
     <script src="components/sessions.js"> </script>
-    <script src="ext/m.ext.js"></script>
+    <script src="components/humans.js"> </script>
     <script>
       m.route(document.getElementById('module'), "/", {
         "/": Links,
-        "/sessions": Sessions
-        // "/users/:username": Users,
+        "/sessions": Sessions,
+        "/h/:human": Humans,
       });
     </script>
   </body>
