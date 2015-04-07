@@ -8,6 +8,8 @@ Links.model = function () {
 
 // Controller
 Links.controller = function () {
+  // put in humans controller
+  // if (! Sessions.token()) return m.route('/sessions')
   var ctrl = this
   ctrl.links = m.prop( [
     new Links.model(),

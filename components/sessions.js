@@ -6,6 +6,8 @@ Sessions.model = function () {
   this.password = m.prop('')
 }
 
+Sessions.token = m.prop(localStorage.getItem('token'))
+
 Sessions.signIn = function (username, password) {
   // Stub success!
   if ((username === 'ben') && (password === 'piano')){
@@ -36,9 +38,9 @@ Sessions.controller = function () {
     Sessions.signIn(ctrl.session.username(), ctrl.session.password())
     .then(
       function (response) {
-        response.token //=> abc123
+        Sessions.token(response.token) //=> abc123
         // redirect to links
-        console.log("Session success", response.token)
+        console.log("Session success")
         m.route("/users/" + response.username);
       },
       function (response) {
