@@ -19,7 +19,7 @@ var testData = [
     links: [
       {title: "hello world from garb", url: "http://google.com"},
       {title: "hello world", url: "http://google.com"},
-      {title: "from garb", url: "http://google.com"},
+      {title: "from garb", url: "http://google.com"}
     ],
     username: 'garb'
   },
@@ -29,7 +29,7 @@ var testData = [
     links: [
       {title: "hello world from ben", url: "http://google.com"},
       {title: "hello world from ben", url: "http://google.com"},
-      {title: "hello world from ben", url: "http://google.com"},
+      {title: "hello world from ben", url: "http://google.com"}
     ],
     username: 'ben'
   },
@@ -39,7 +39,7 @@ var testData = [
     links: [
       {title: "hello world from o", url: "http://google.com"},
       {title: "hello world from o", url: "http://google.com"},
-      {title: "hello world from o", url: "http://google.com"},
+      {title: "hello world from o", url: "http://google.com"}
     ],
     username: 'beno'
   }
@@ -77,8 +77,6 @@ Humans.controller = function () {
   }, function (response) {
     console.log("Rejected:", response)
   })
-  console.log('two')
-
 }
 
 Humans.view = function(ctrl) {

@@ -2,8 +2,8 @@ Links = {}
 
 // Model
 Links.model = function (title, url) {
-  this.title    = m.prop('')
-  this.url      = m.prop('')
+  this.title    = m.prop(title)
+  this.url      = m.prop(url)
 }
 
 // Controller
