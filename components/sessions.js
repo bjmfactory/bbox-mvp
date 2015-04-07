@@ -8,13 +8,22 @@ Sessions.model = function () {
 
 Sessions.signIn = function (username, password) {
   // Stub success!
-  return m.deferred.resolve({ token: 'abc123' })
+  if ((username === 'ben') && (password === 'piano')){
+    return m.deferred.resolve({ token: 'abc123', username: username })
+  } else {
+    // Stub failure
+    return m.deferred.reject({ error: 'invalid_credentials' })
+  }
+
+  // m.deffered is a substitute for this kind of thing:
+  // this is what you would use with a server
+
   // return m.request({
   //   url: '/signin', method: 'post',
   //   data: { username: username, password: password }
   // })
-  // Stub failure
-  // return m.deferred.reject({ error: 'invalid_credentials' })
+  // .then()
+
 }
 
 // Controller
@@ -22,17 +31,19 @@ Sessions.controller = function () {
   var ctrl = this
   ctrl.session = new Sessions.model()
 
-  ctrl.submit = function(){
+  ctrl.submit = function(e){
+    e.preventDefault()
     Sessions.signIn(ctrl.session.username(), ctrl.session.password())
     .then(
       function (response) {
         response.token //=> abc123
         // redirect to links
-        console.log("Session success")
+        console.log("Session success", response.token)
+        m.route("/users/" + response.username);
       },
-      function () {
+      function (response) {
         // log error message
-        console.log("Session failure")
+        console.log(response.error)
       }
     )
   }
