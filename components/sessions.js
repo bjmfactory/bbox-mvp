@@ -10,7 +10,7 @@ Sessions.token = m.prop(localStorage.getItem('token'))
 
 Sessions.signIn = function (username, password) {
   // Stub success!
-  if ((username === 'ben') && (password === 'piano')){
+  if (true || (username === 'ben') && (password === 'piano')){
     return m.deferred.resolve({ token: 'abc123', username: username })
   } else {
     // Stub failure

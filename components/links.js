@@ -1,23 +1,17 @@
 Links = {}
 
 // Model
-Links.model = function () {
-  this.title  = m.prop('seek and find')
-  this.url    = m.prop('http://google.com')
+Links.model = function (title, url) {
+  this.title    = m.prop('')
+  this.url      = m.prop('')
 }
 
 // Controller
-Links.controller = function () {
+Links.controller = function (links) {
   // put in humans controller
   // if (! Sessions.token()) return m.route('/sessions')
   var ctrl = this
-  ctrl.links = m.prop( [
-    // could I have a random database of links that I pass
-    // in here as arguments?
-    new Links.model(),
-    new Links.model(),
-    new Links.model(),
-  ] )
+  ctrl.links = links
 }
 
 // View
@@ -41,7 +35,7 @@ Links.view = function(ctrl) {
     ]),
 
     m('.box', [
-      m('h2', 'bjmfactory'),
+      m('h2', 'View Links'),
       ctrl.links().map(function (link) {
         return m('.link', [
           m('a', { href: link.url()}, link.title())
