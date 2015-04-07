@@ -2,7 +2,7 @@ Links = {}
 
 // Model
 Links.model = function () {
-  this.title  = m.prop('search the world')
+  this.title  = m.prop('seek and find')
   this.url    = m.prop('http://google.com')
 }
 
@@ -14,11 +14,6 @@ Links.controller = function () {
     new Links.model(),
     new Links.model(),
   ] )
-
-  ctrl.add = function () {
-    var newModel = new Links.model()
-    ctrl.links().push(newModel)
-  }
 }
 
 // View
