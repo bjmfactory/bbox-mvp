@@ -23,14 +23,16 @@ Sessions.controller = function () {
   ctrl.session = new Sessions.model()
 
   ctrl.submit = function(){
-    Sessions.signIn().then(
+    Sessions.signIn(ctrl.session.username(), ctrl.session.password())
+    .then(
       function (response) {
         response.token //=> abc123
         // redirect to links
-
+        console.log("Session success")
       },
       function () {
         // log error message
+        console.log("Session failure")
       }
     )
   }
@@ -47,7 +49,7 @@ Sessions.view = function(ctrl) {
       onchange: m.withAttr('value', ctrl.session.username)
     }),
     m('p', 'Password:'),
-    m('input[type=text]', {
+    m('input[type=password]', {
       value: ctrl.session.password(),
       onchange: m.withAttr('value', ctrl.session.password)
     }),
