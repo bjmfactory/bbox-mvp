@@ -16,19 +16,23 @@ Sessions.signIn = function (username, password) {
 // Controller
 Sessions.controller = function () {
   var ctrl = this
+  ctrl.sessions = m.prop( [new Sessions.model()] )
 }
 
 // View
 Sessions.view = function(ctrl) {
-  return m('.sesssionsForm' , [
+  // return m('h2', 'hello world from sessions')
+  return m('.sesssionForm' , [
     m('h1', 'Enter your info'),
+    m('p', 'Username:'),
     m('input[type=text]', {
       value: '',
-      onchange: m.withAttr('value', ctrl.session.username)
+      onchange: m.withAttr('value', ctrl.sessions.username)
     }),
+    m('p', 'Password:'),
     m('input[type=text]', {
       value: '',
-      onchange: m.withAttr('value', ctrl.session.password)
+      onchange: m.withAttr('value', ctrl.sessions.password)
     }),
   ])
 }
