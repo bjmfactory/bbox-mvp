@@ -15,7 +15,7 @@ Sessions.controller = function () {
 
 // View
 Sessions.view = function(ctrl) {
-
+  return m('h1', 'Hello World from Sessions')
 }
 
 

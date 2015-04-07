@@ -11,8 +11,14 @@
     <!-- SCRIPTS-->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mithril/0.1.33/mithril.js"></script>
     <script src="links.js"> </script>
+    <script src="sessions.js"> </script>
     <script>
       m.module(document.getElementById('module'), Links)
+
+      m.route(document.getElementById('module'), "/", {
+        "/": Links,
+        "/login": Sessions,
+      });
     </script>
   </body>
 </html>
