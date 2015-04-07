@@ -22,7 +22,7 @@ Sessions.controller = function () {
 // View
 Sessions.view = function(ctrl) {
   // return m('h2', 'hello world from sessions')
-  return m('.sesssionForm' , [
+  return m('.sessionForm' , [
     m('h1', 'Enter your info'),
     m('p', 'Username:'),
     m('input[type=text]', {

@@ -16,6 +16,12 @@ body {
   margin: 20px;
 }
 
+input {
+  padding: 10px;
+  font-size: 20px;
+  margin: 0px 5px 0px 0px;
+}
+
 .link a {
   display: block;
   margin: 0px 0px 10px 0px;
@@ -28,10 +34,10 @@ body {
   margin: 0px 0px 10px 0px;
 }
 
-.linkForm input {
-  padding: 10px;
-  font-size: 20px;
-  margin: 0px 5px 0px 0px;
+.sessionForm {
+  border: 1px solid black;
+  padding: 20px;
+  margin: 20px;
 }
 
 
