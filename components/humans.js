@@ -17,19 +17,19 @@ var testData = [
     id: 1,
     email: 'a@b.com',
     links: [
-      {title: "hello world from garb", url: "http://google.com"},
-      {title: "hello world", url: "http://google.com"},
-      {title: "from garb", url: "http://google.com"}
+      {title: "mithril tutorial", url: "http://gilbert.ghost.io/mithril-js-tutorial-1/"},
+      {title: "bossa nova", url: "http://www.pandora.com/station/play/2596507473269624311"},
+      {title: "life without semicolons", url: "http://dreamatico.com/data_images/beach/beach-8.jpg"}
     ],
-    username: 'garb'
+    username: 'gilbert'
   },
   {
     id: 2,
     email: 'b@b.com',
     links: [
-      {title: "hello world from ben", url: "http://google.com"},
-      {title: "hello world from ben", url: "http://google.com"},
-      {title: "hello world from ben", url: "http://google.com"}
+      {title: "julianna barwick cover", url: "https://soundcloud.com/bjmfactory/learning-cloudbank-by-julianna"},
+      {title: "alaska music", url: "https://bjmfactory.bandcamp.com/album/the-alaska-recordings"},
+      {title: "dylan covers", url: "https://www.youtube.com/playlist?list=PLek-1iNyr8pLMYauUZze9CL9W3MFHdXaI"}
     ],
     username: 'ben'
   },
@@ -37,11 +37,11 @@ var testData = [
     id: 3,
     email: 'o@b.com',
     links: [
-      {title: "hello world from o", url: "http://google.com"},
-      {title: "hello world from o", url: "http://google.com"},
-      {title: "hello world from o", url: "http://google.com"}
+      {title: "clojure", url: "http://clojure.org/"},
+      {title: "spotify API", url: "https://developer.spotify.com/web-api/"},
+      {title: "atx restaurants", url: "http://inspectatx.herokuapp.com/"}
     ],
-    username: 'beno'
+    username: 'nick'
   }
 ]
 
@@ -81,7 +81,7 @@ Humans.controller = function () {
 
 Humans.view = function(ctrl) {
   return [
-    m('h2', ctrl.human().username),
+    m('h2', 'Profile page'),
     // Links.view(ctrl.linksCtrl)
     ctrl.linksCtrl ? Links.view(ctrl.linksCtrl) : null
   ]
